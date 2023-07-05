@@ -5,7 +5,8 @@
   "projects": {
     "portafolioAngular": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -94,5 +95,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "375a1e89-4195-4828-b15d-b50c4d9301c6"
   }
 }

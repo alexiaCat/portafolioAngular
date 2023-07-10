@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { InfoPaginaService } from '../../services/info-pagina.service';
 
 
 @Component({
@@ -7,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent {
+
+  constructor(public infoService: InfoPaginaService) {
+
+  }
 
 }

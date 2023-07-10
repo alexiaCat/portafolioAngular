@@ -10,6 +10,7 @@ export class InfoPaginaService {
   info: InfoPagina = {};
   cargada = false;
   equipo: any[] = [];
+  cargando = true;
 
   constructor(private http: HttpClient) {
     this.cargarInfo();
@@ -28,7 +29,7 @@ export class InfoPaginaService {
     this.http.get('https://portafolio-bbe21-default-rtdb.asia-southeast1.firebasedatabase.app/.json')
       .subscribe((res: any) => {
         this.equipo = res.equipo;
-        console.log(this.equipo);
+        this.cargando = false;
       });
   }
 }

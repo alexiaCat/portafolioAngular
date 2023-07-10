@@ -1,1 +1,6 @@
 @import '~animate.css/animate.min.css';
+
+svg path,
+svg rect{
+  fill: black;
+}
